@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML website template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script src="http://biostall.com/wp-content/uploads/2010/07/jquery-swapsies.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#b1").click(function () {
+                    $("#d3").swap({
+                        target: "d7",
+
+                        callback: function () {
+
+                        }
+                    });
+                });
+            }); 
+        </script>
+        <script>
+            function change() {
+                var image = document.getElementById('i1');
+                if (image.src.match("computer2b.jpg")) {
+                    image.src = "computer2.jpg";
+                } else {
+                    image.src = "computer2b.jpg";
+                }
+            }
+        </script>
+	    <style>
+        #d1 {
+            position:absolute;
+            //width:100%;
+            font-family:SourceSansPro-Light;
+            font-size:2.8208744710860367vw;
+            color:#ffffff;
+            text-align:left;
+            top:0;
+            padding:40px 0px 0px 40px;
+        }
+
+        #d2
+        {
+            width:100%;
+            font-family:SourceSansPro-Light;
+            color:#0f0f0f;
+        }
+
+        html, body {
+            height: 100%;
+            padding: 0;
+            width: 100%;
+        }
+        #d3,#d4
+        {
+            font-family:SourceSansPro-Regular;
+            color:#ee4023;
+            padding-top:60px;
+            padding-left:60px;
+            width:100%;
+        }
+        button {
+            
+            color: #ee4033;
+            padding: 4px 200px 4px 4px;
+            font-size: 20px;   
+            text-align:left;
+            bottom:5px;
+        }
+       
+	</style>
+    </head>
+    <body>
+        <div style="width:100%;height:auto;">
+            <div>
+                <img src="hero.jpg" alt="hero" style="width:100%; position:relative;" />
+                <div id="d1" >
+                    <p>Turn your videos &<br />pictures into a image<br />with just one click.</p>          
+                </div>
+            </div>
+        </div>
+
+        <div style="width:100%;height:AUTO;">
+	    <div id="d2" class="text-center">
+            <p style="font-size:48px;">Tell Amaging stories</p>
+            <p style="font-size:24px;">Editing software that bring your videos and pictures together in one movie.</p>
+        </div></div>
+
+        <div>
+        <div class="row" style="width:100%;margin-right:0px;margin-left:0px;">
+            <div id="d7" class="col-md" style="clear:both;padding-left:0px; padding-right:0px;vertical-align:middle;">
+                <img id src="computer1.jpg" alt="computer1" style="max-width:100%;">
+            </div>
+            <div id="d3" class="col-md container" style="padding-left:40px; padding-right:40px;">
+                <p style="font-size:24px;">Customize Your Moment</p>
+                <pre style="font-family:SourceSansPro-Light;color:#0f0f0f;font-size:18px;">
+Bacon ipsum dolor amet laborum drumstick andouille
+cupim shoulder commodo t-bone ex minim pork loin
+velit. Aliquip fatback fugiat prodent alique culpa cillum
+minim jerky meatloaf. Drumstick kevin et velit boudin nisi
+ea salami culpa ad.
+                </pre>
+                <button id="b1" style="border: 2px solid #ee4033;"> flip </button>
+            </div>
+        </div></div><br />
+
+        <div style="width:100%;height:auto;">
+        <div class="row" style="margin-right:0px;margin-left:0px;">
+           <div id="d4" class="col-md container" style="padding-right:0px;vertical-align:middle;">
+                <p style="font-size:24px;">Automatic Crop & Zoom</p>
+                <pre style="font-family:SourceSansPro-Light;color:#0f0f0f;font-size:18px;">
+Meatball ut deserunt ad beef ribs. Anim spare ribs kevin mollit.
+Ut ham hock mollit, leberkas irure ex lorem corned beef
+reprehen derit. Corned beef beef ribs turducken sausage short
+ribs in, cupidatat culpa. T-bone bacon sausage, boudin et
+occaecat fatback ball tip cupim.</pre>
+             
+                <button style="border: 2px solid #ee4033;" onclick="change();">change</button>
+            </div>
+             <div id="d6" class="col-md" style="padding-right:0px;padding-left:0px;width:100%;display:block;">
+                <img id="i1" src="computer2.jpg" alt="computer2" style="max-width:100%; float:right;"/>
+            </div>
+        </div></div><br />
+
+        <div style="width:100%;height:auto;">
+        <div style="position:relative;">
+            <img src="closing-photo.jpg" alt="closing photo"style="width:100%;position:relative;display:block;">
+            <div  id="d7" 
+                style="position:absolute; background: rgba(0, 0, 0,0.5); position: absolute;left:50%;bottom:30%;
+                padding: 20px 70px;color:#ffffff;text-align:center;vertical-align:middle;transform: translate(-50%, -50%);">
+                <span style="font-family:SourceSansPro-Regular;font-size:36px;">Free trial. No credit card. No Hassle.</span><br />
+                <span style="font-family:SourceSansPro-Light;font-size:20px;">Just enter your email address below and begin capturing moments.</span>
+                <br /><br />
+                <div class="container">
+                      <input type="email" placeholder="Enter your email address" name="email">
+                      <button type="button" style="background-color:red;bottom:0px;color:White; border:none; padding:0px 50px;">Start free trial</button>
+                </div>
+            </div>
+        </div></div><br />
+
+       <div style="width:100%;height:auto;">
+         <div style="position:relative;">
+            <img src="geometric-band.jpg" alt="end" style="width:100%; position:relative; display:block;;" />
+             <div id="d5" align="center" style="position:absolute;bottom:5px;left:50%;transform: translate(-50%, -50%);
+                 font-family:SourceSansPro-Light; font-size:16px; color:#ffffff;text-align:center;">
+                    Sitemap | Legal | Blog              
+            </div>
+            </div>
+        </div>
+</body>
+</html>
